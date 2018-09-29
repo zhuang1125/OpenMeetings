@@ -35,9 +35,9 @@ RUN yum install -y ImageMagick giflib giflib-devel giflib-utils
 RUN cd /opt; \
 wget http://ftp.icm.edu.pl/packages/sox/14.4.2/sox-14.4.2.tar.gz; \
 tar xzvf sox-14.4.2.tar.gz;
-RUN cd /opt/sox-14.4.2; \
-./configure; \
-make && make install;
+#RUN cd /opt/sox-14.4.2; \
+#./configure; \
+#make && make install;
 
 RUN cd /opt; \
 
@@ -99,8 +99,8 @@ wget http://ffmpeg.org/releases/ffmpeg-4.0.tar.gz ;
 
 RUN cd /opt; \
 wget https://cwiki.apache.org/confluence/download/attachments/27838216/ffmpeg_centos7.sh; \
-chmod +x ffmpeg_centos7.sh;   \
-./ffmpeg_centos7.sh
+chmod +x ffmpeg_centos7.sh;   
+#./ffmpeg_centos7.sh
 
 
 
