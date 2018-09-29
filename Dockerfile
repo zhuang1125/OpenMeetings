@@ -17,8 +17,8 @@ RUN yum install -y ImageMagick giflib giflib-devel giflib-utils
 
 
 
-
-RUN cd /opt; \
+RUN yum install -y gcc ; \
+cd /opt; \
 wget http://ftp.icm.edu.pl/packages/sox/14.4.2/sox-14.4.2.tar.gz; \
 tar xzvf sox-14.4.2.tar.gz;
 RUN cd /opt/sox-14.4.2; \
