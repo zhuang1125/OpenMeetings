@@ -99,7 +99,7 @@ wget http://ffmpeg.org/releases/ffmpeg-4.0.tar.gz ;
 
 RUN cd /opt; \
 wget https://cwiki.apache.org/confluence/download/attachments/27838216/ffmpeg_centos7.sh; \
-chmod +x ffmpeg_centos7.sh; 
+chmod +x ffmpeg_centos7.sh;   \
 ./ffmpeg_centos7.sh
 
 
